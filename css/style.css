@@ -1,0 +1,163 @@
+html {
+    font-size: 16px; /* 1rem = 1 модуль */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    color: #D9D9D9;
+    font-family: 'Iosevka Term Slab', monospace;
+    font-size: 1rem;
+    line-height: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── HEADER ── */
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3ch;
+    /* border-bottom: 1px solid #D9D9D9; */
+}
+
+.logo {
+    flex-shrink: 0;
+    margin-right: 2ch;
+}
+
+.logo svg {
+    display: block;
+    height: 3rem;
+    width: auto;
+}
+
+.site-title {
+    flex: 1;
+    line-height: 2rem;
+}
+
+.site-title h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: normal;
+    color: #D9D9D9;
+    white-space: nowrap;
+}
+
+.site-title p {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #D9D9D9;
+}
+
+nav {
+    display: flex;
+    gap: 4ch;
+    flex-shrink: 0;
+}
+
+nav a {
+    color: #D9D9D9;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+/* ── MAIN ── */
+main {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+}
+
+.left-column {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 3ch 3rem;
+}
+
+.photo-wrap img {
+    width: 100%;
+    display: block;
+}
+
+.divider {
+    flex-shrink: 0;
+    width: 1px;
+    background-color: #D9D9D9;
+}
+
+.right-column {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 3rem 4ch;
+}
+
+/* ── BIO ── */
+.bio {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.bio p {
+    margin-bottom: 2rem;
+}
+
+.bio p:last-child {
+    margin-bottom: 0;
+}
+
+/* «За свою карьеру:» — без отступа снизу, список идёт вплотную */
+.bio p:has(+ ul) {
+    margin-bottom: 0;
+}
+
+.bio ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.bio > ul > li {
+    padding-left: 2ch;
+    text-indent: -2ch;
+}
+
+.bio > ul > li::before {
+    content: '· ';
+}
+
+.bio > ul > li > ul {
+    margin-left: 2ch;
+}
+
+.bio > ul > li > ul > li {
+    padding-left: 2ch;
+    text-indent: -2ch;
+}
+
+.bio > ul > li > ul > li::before {
+    content: '· ';
+}
+
+/* ── FOOTER ── */
+footer {
+    padding: 1rem 3ch;
+    /* border-top: 1px solid #D9D9D9; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    line-height: 2rem;
+}
+
+.footer-deco {
+    text-align: right;
+}
