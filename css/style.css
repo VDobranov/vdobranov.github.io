@@ -85,8 +85,13 @@ main {
     padding: 0 3ch 3rem;
 }
 
+.photo-wrap {
+    display: flex;
+    justify-content: center;
+}
+
 .photo-wrap img {
-    width: 100%;
+    width: 80%;
     display: block;
 }
 
@@ -99,8 +104,9 @@ main {
 .right-column {
     width: 62%;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     padding: 3rem 4ch;
+    overflow-y: auto;
 }
 
 /* ── BIO ── */
