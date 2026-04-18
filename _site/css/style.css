@@ -198,6 +198,7 @@ main.index .right-column {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	max-width: 100ch;
+	height: 100%;
 }
 
 .bio p,
@@ -272,6 +273,13 @@ main.index .right-column {
 	margin-bottom: 0.5rem;
 }
 
+.content h4 {
+	font-size: inherit;
+	font-weight: inherit;
+	text-align: right;
+	margin-bottom: 1rem;
+}
+
 .content code {
 	/* font-family: 'Iosevka Term Slab', monospace;
 	background-color: #444444; */
@@ -321,6 +329,10 @@ main.index .right-column {
 /* ── SIDEBAR NAV ── */
 .sidebar {
 	list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .sidebar > li {
@@ -330,17 +342,23 @@ main.index .right-column {
 .sidebar > li > a {
 	/* color: #D9D9D9; */
 	text-decoration: none;
-	display: block;
-	padding: 0.25rem 0;
+	text-transform: none;
+	/* display: block; */
+	/* padding: 0.25rem 0; */
 }
 
 .sidebar > li > a:hover {
-	text-decoration: underline;
+	/* text-decoration: underline; */
 }
 
 .sidebar > li > a.current {
 	/* color: #FFFFFF; */
-	font-weight: bold;
+	/* font-weight: bold; */
+	margin-right: -2ch;
+}
+
+.sidebar > li > a.current::after {
+	content: " >";
 }
 
 /* ── FOOTER ── */
