@@ -3,6 +3,8 @@ const markdownIt = require('markdown-it');
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/css/');
   eleventyConfig.addPassthroughCopy('src/img/');
+  eleventyConfig.addPassthroughCopy('src/developments/');
+  eleventyConfig.addPassthroughCopy('src/posts/');
 
   const md = markdownIt({
     html: true,
