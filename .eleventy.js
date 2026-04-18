@@ -14,13 +14,13 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection('developments', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/developments/*.md').sort((a, b) => {
-      return new Date(b.date) - new Date(a.date);
+      return (a.data.title || '').localeCompare(b.data.title || '');
     });
   });
 
   eleventyConfig.addCollection('posts', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/posts/*.md').sort((a, b) => {
-      return new Date(b.date) - new Date(a.date);
+      return new Date(b.data.date) - new Date(a.data.date);
     });
   });
 

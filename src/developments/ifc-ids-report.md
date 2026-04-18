@@ -1,19 +1,11 @@
 ---
-title: "Автоматический отчёт по валидации IFC"
+title: IFC IDS Report
 date: 2024-01-15
-description: "Автоматический отчёт по валидации IFC моделей"
-layout: layout.njk
+description: Автоматический отчёт по валидации IFC моделей
+layout: item-layout.njk
+collectionName: developments
+permalink: /developments/ifc-ids-report.html
 ---
 
-<div class="left-column">
-  <nav class="sidebar">
-    <li><a href="/developments/ifc-ids-report/">IFC IDS Report</a></li>
-  </nav>
-</div>
-<div class="divider"></div>
-<div class="right-column">
-  <div class="content">
-    <h1>Автоматический отчёт по валидации IFC</h1>
-    <p>Описание разработки...</p>
-  </div>
-</div>
+<h1>Автоматический отчёт по валидации IFC</h1>
+<p>Описание разработки...</p>

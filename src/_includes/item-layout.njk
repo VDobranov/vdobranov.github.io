@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} — Вячеслав Добранов</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  {% include "header.njk" %}
+  <main class="columns">
+    <div class="left-column">
+{%- set coll = collectionName or 'developments' -%}
+<nav class="sidebar">
+{%- for item in collections[coll] %}
+  <li><a href="/{{ coll }}/{{ item.fileSlug }}.html"{% if item.fileSlug == page.fileSlug %} class="current"{% endif %}>{{ item.data.title }}</a></li>
+{%- endfor -%}
+</nav>
+    </div>
+    <div class="divider"></div>
+    <div class="right-column">
+      <div class="content">
+{{- content | safe -}}
+      </div>
+    </div>
+  </main>
+  {% include "footer.njk" %}
+</body>
+</html>
