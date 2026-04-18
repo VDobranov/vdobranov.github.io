@@ -4,6 +4,10 @@ CLAUDE.md
 
 # AGENTS
 AGENTS.md
+MIGRATION_PLAN.md
 
+.playwright*
+node_modules/
 temp/
 .DS_Store
+package*
