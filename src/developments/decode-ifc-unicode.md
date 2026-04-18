@@ -1,7 +1,5 @@
 ---
 title: DECODE-IFC-UNICODE
-date: 2024-01-15
-description: Автоматический отчёт по валидации IFC моделей
 layout: item-layout.njk
 collectionName: developments
 permalink: /developments/decode-ifc-unicode.html
