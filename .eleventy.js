@@ -1,6 +1,7 @@
 const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
+	eleventyConfig.addPassthroughCopy("src/favicon.svg");
 	eleventyConfig.addPassthroughCopy("src/css/");
 	eleventyConfig.addPassthroughCopy("src/img/");
 	eleventyConfig.addPassthroughCopy("src/developments/*.png");
