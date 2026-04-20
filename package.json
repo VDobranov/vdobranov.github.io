@@ -1,0 +1,27 @@
+{
+  "name": "vdobranov.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VDobranov/vdobranov.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VDobranov/vdobranov.github.io/issues"
+  },
+  "homepage": "https://github.com/VDobranov/vdobranov.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "markdown-it": "^14.1.1",
+    "markdown-it-shiki": "^0.9.0"
+  }
+}

@@ -8,6 +8,7 @@ MIGRATION_PLAN.md
 
 .playwright*
 node_modules/
+_site/
 temp/
 .DS_Store
-package*
+package-lock.json
