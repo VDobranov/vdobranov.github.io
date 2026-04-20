@@ -25,7 +25,7 @@
 		<a href="/about.html">Обо мне</a>
 		<a href="/cv.html">Резюме</a>
 		<a href="/developments/anchor-bolt-generator.html">Разработки</a>
-		<a href="/posts/hello-world.html">Записки</a>
+		<a href="/posts/2026-04-11.html">Записки</a>
 		<a href="/contacts.html">Контакты</a>
 	</nav>
 </header>
@@ -33,16 +33,18 @@
     <div class="left-column"><nav class="sidebar">
   <li><a href="/developments/anchor-bolt-generator.html">ANCHOR-BOLT-GENERATOR</a></li>
   <li><a href="/developments/decode-ifc-unicode.html">DECODE-IFC-UNICODE</a></li>
+  <li><a href="/developments/dxf2ifc2d.html">DXF2IFC2D</a></li>
+  <li><a href="/developments/geso-requirements.html">GESO-requirements</a></li>
   <li><a href="/developments/ids2pset.html" class="current">IDS2PSET</a></li>
-  <li><a href="/developments/ifc-ids-report.html">IFC-IDS-REPORT</a></li></nav>
+  <li><a href="/developments/ifc-ids-report.html">IFC-IDS-REPORT</a></li>
+  <li><a href="/developments/ru-ifc-libraries.html">RU_IFC_Libraries</a></li></nav>
     </div>
     <div class="right-column">
       <div class="content"><h1>IDS2PSET</h1>
 <h4><a href="https://vdobranov.github.io/IDS2PSET/">https://vdobranov.github.io/IDS2PSET/</a></h4>
-<p>Приложение для формирования на основе требований IDS наборов свойств IfcPropertySetTemplate, которые потом можно скопировать в BonsaiBIM и подключать свойства к элементам модели. Чтобы руками не создавать все наборы, которые просит та или иная экспертиза.</p>
-<p>В левой части подгружаешь свои IDS-требования, в правой части видишь собранные с них наборы свойств, жмёшь сгенерировать IFC, скачиваешь готовую IFC со всеми IfcPropertySetTemplate и IfcPropertyTemplate для каждой IDS.</p>
+<p>Веб-приложение для автоматического формирования шаблонов наборов свойств IFC на основе IDS-спецификаций.</p>
+<p>Загрузите один или несколько IDS-файлов — приложение извлечёт из них требования к свойствам и сформирует соответствующие IfcPropertySetTemplate и IfcPropertyTemplate. Готовый IFC-файл с шаблонами можно подключить в BonsaiBIM в качестве библиотеки и использовать для наполнения модели атрибутами без ручного создания наборов. Обработка выполняется полностью в браузере через Pyodide и IfcOpenShell.</p>
 <p><img src="IDS2PSET.png" alt="Пример работы"></p>
-<p>Функционал нужно тестировать на реальных проектах, а для этого нужна огласка. Но BonsaiBIM пользуются не очень многие, поэтому есть идея, помимо шаблонных наборов свойств с IFC, формировать файл мэппинга для Revit, Tekla и проч. В первую очередь, конечно, Revit.</p>
 </div>
     </div>
   </main>

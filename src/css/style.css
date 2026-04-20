@@ -361,6 +361,12 @@ main.index .right-column {
 	content: " >";
 }
 
+blockquote {
+	font-style: italic;
+	/* margin-left: 2ch; */
+	margin-bottom: 2ch;
+}
+
 /* ── FOOTER ── */
 footer {
 	/* padding: 0.5rem 3ch; */

@@ -13,7 +13,7 @@
 {%- set coll = collectionName or 'developments' -%}
 <nav class="sidebar">
 {%- for item in collections[coll] %}
-  <li><a href="/{{ coll }}/{{ item.fileSlug }}.html"{% if item.fileSlug == page.fileSlug %} class="current"{% endif %}>{{ item.data.title }}</a></li>
+  <li><a href="/{{ coll }}/{{ item.fileSlug }}.html"{% if item.fileSlug == page.fileSlug %} class="current"{% endif %}>{{ item.data.title }}{% if item.data.date %} | {{ item.data.date  | formatDate("yyyy-MM-dd") }}{% endif %}</a></li>
 {%- endfor -%}
 </nav>
     </div>

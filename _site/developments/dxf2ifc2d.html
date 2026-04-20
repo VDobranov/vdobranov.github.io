@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IFC-IDS-REPORT — Вячеслав Добранов</title>
+  <title>DXF2IFC2D — Вячеслав Добранов</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -33,19 +33,18 @@
     <div class="left-column"><nav class="sidebar">
   <li><a href="/developments/anchor-bolt-generator.html">ANCHOR-BOLT-GENERATOR</a></li>
   <li><a href="/developments/decode-ifc-unicode.html">DECODE-IFC-UNICODE</a></li>
-  <li><a href="/developments/dxf2ifc2d.html">DXF2IFC2D</a></li>
+  <li><a href="/developments/dxf2ifc2d.html" class="current">DXF2IFC2D</a></li>
   <li><a href="/developments/geso-requirements.html">GESO-requirements</a></li>
   <li><a href="/developments/ids2pset.html">IDS2PSET</a></li>
-  <li><a href="/developments/ifc-ids-report.html" class="current">IFC-IDS-REPORT</a></li>
+  <li><a href="/developments/ifc-ids-report.html">IFC-IDS-REPORT</a></li>
   <li><a href="/developments/ru-ifc-libraries.html">RU_IFC_Libraries</a></li></nav>
     </div>
     <div class="right-column">
-      <div class="content"><h1>IFC-IDS-REPORT</h1>
-<h4><a href="https://vdobranov.github.io/IFC-IDS-REPORT/">https://vdobranov.github.io/IFC-IDS-REPORT/</a></h4>
-<p>Статическое веб-приложение для валидации IFC-файлов на соответствие требованиям IDS.</p>
-<p>Загрузите IFC-модель и IDS-спецификацию — приложение выполнит проверку в браузере без передачи данных на сервер и сформирует отчёт в одном из поддерживаемых форматов: HTML, JSON, BCF, ODS. Вся обработка реализована через WebAssembly (Pyodide + IfcOpenShell).</p>
-<p><img src="IFC-IDS-REPORT.png" alt="Пример работы"></p>
-<p>Приложение представляет собой браузерную оболочку над модулем IfcTester из состава ifcopenshell. Тот же функционал доступен также через командную строку, в BonsaiBIM и на <a href="http://ifctester.org">ifctester.org</a>.</p>
+      <div class="content"><h1>DXF2IFC2D</h1>
+<h4><a href="https://github.com/VDobranov/DXF2IFC2D">https://github.com/VDobranov/DXF2IFC2D</a></h4>
+<p>Python-скрипт для преобразования DXF-раскроев Wikihouse Skylark-250 в корректные IFC-модели.</p>
+<p><img src="DXF2IFC2D.png" alt=""></p>
+<p>DXF-шаблоны, предназначенные для CNC-оборудования, не содержат информационной структуры, необходимой для BIM. Скрипт выполняет трёхэтапное преобразование геометрии и формирует IFC-файл с полноценной иерархией элементов. Разработан применительно к блоку CORNER-S конструктора Wikihouse Skylark.</p>
 </div>
     </div>
   </main>
