@@ -42,12 +42,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	padding: 2rem 8ch;
+	padding: 2rem 6ch;
 }
 
 /* ── HEADER ── */
 header {
-	min-height: 4rem;
+	max-height: 4rem;
 	display: flex;
 	align-items: center;
 	gap: 2ch;
