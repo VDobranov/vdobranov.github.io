@@ -64,6 +64,7 @@ body {
 	flex-direction: column;
 	gap: 1rem;
 	padding: 2rem 3rem;
+	transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* ── HEADER ── */
