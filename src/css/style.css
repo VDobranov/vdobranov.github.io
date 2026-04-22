@@ -424,14 +424,21 @@ footer .quote {
 @media (max-width: 768px) {
 	body {
 		padding: 0.5rem 1ch;
+		gap: 0;
 	}
 
 	header {
 		order: 2;
+		padding-top: 0.5rem;
+		border-top: 2px solid var(--light);
 	}
 
 	header .ident {
 		display: none;
+	}
+
+	header nav {
+		row-gap: 1ch;
 	}
 
 	main {
