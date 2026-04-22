@@ -4,6 +4,27 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Iosevka Term Slab';
+	src: url('/fonts/IosevkaTermSlab-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Iosevka Term Slab';
+	src: url('/fonts/IosevkaTermSlab-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Iosevka Term Slab';
+	src: url('/fonts/IosevkaTermSlab-Italic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+}
+
 :root {
 	--base: 16px;
 	--h1: var(--base*2);
