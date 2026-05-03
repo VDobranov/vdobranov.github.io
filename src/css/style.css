@@ -547,4 +547,8 @@ footer .quote {
 	.toc-panel {
 		display: none;
 	}
+	
+	.toc-checkbox {
+		display: none;
+	}
 }
