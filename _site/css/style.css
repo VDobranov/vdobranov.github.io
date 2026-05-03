@@ -398,6 +398,45 @@ main.index .right-column {
 	margin-right: -1rem;
 }
 
+/* TOC toggle */
+.toc-toggle {
+	font-size: 2rem;
+	cursor: pointer;
+	padding: 0 0.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: var(--dark);
+	border: 1px solid var(--light);
+}
+
+.toc-toggle:hover {
+	color: var(--dark);
+	background-color: var(--light);
+}
+
+.toc-panel {
+	padding: 0.5rem 0;
+}
+
+.toc-panel ul {
+	list-style: none;
+}
+
+.toc-panel li {
+	margin-bottom: 0.5rem;
+}
+
+.toc-panel a {
+	color: inherit;
+	text-decoration: none;
+	display: block;
+	padding: 0.25rem 0;
+}
+
+.toc-panel a:hover {
+	text-decoration: underline;
+}
+
 blockquote {
 	font-style: italic;
 	/* margin-left: 1rem; */
@@ -430,6 +469,10 @@ footer .quote {
 
 	header {
 		order: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		gap: 0.5rem;
 		padding-top: 0.5rem;
 		border-top: 2px solid var(--light);
 	}
@@ -439,7 +482,34 @@ footer .quote {
 	}
 
 	header nav {
+		order: 10;
 		row-gap: 0.5rem;
+	}
+
+	/* TOC toggle - скрыт на десктопе, виден на мобильных */
+	.toc-toggle {
+		order: 1;
+		display: block;
+	}
+
+	/* TOC панель - скрыта на мобильных по умолчанию */
+	.toc-panel {
+		background-color: var(--dark);
+		order: 5;
+		display: none;
+		padding: 0 0.5rem;
+		border: 2px solid var(--light);
+		border-bottom: none;
+	}
+
+	/* Когда checkbox:checked - показать панель */
+	.toc-checkbox:checked ~ .toc-panel {
+		display: block;
+	}
+
+	/* Скрываем checkbox */
+	.toc-checkbox {
+		display: none;
 	}
 
 	main {
@@ -464,6 +534,17 @@ footer .quote {
 	}
 
 	footer {
+		display: none;
+	}
+}
+
+/* Десктоп: скрываем toggle и panel (там есть sidebar) */
+@media (min-width: 769px) {
+	.toc-toggle {
+		display: none;
+	}
+
+	.toc-panel {
 		display: none;
 	}
 }
